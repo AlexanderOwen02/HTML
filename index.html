@@ -1,190 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio – Alexander Owen</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexander Owen — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body bgcolor="#111111" text="#EDEDED" link="#9ecbff" vlink="#b6b6b6" alink="#ffffff">
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">T</a>
+      <nav class="main-nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Portfolio</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Top Bar -->
-  <table width="96%" align="center" cellpadding="8">
-    <tr>
-      <td align="left">
-        <font face="Arial, Helvetica, sans-serif" size="5"><b>T</b></font>
-      </td>
-      <td align="right">
-        <font face="Arial, Helvetica, sans-serif">
-          <a href="#home">Home</a> &nbsp;&nbsp; 
-          <a href="#about">About Me</a> &nbsp;&nbsp; 
-          <a href="#skills">Portfolio</a>
-        </font>
-      </td>
-    </tr>
-  </table>
-  <hr color="#2A2A2A" size="1" width="96%">
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__text">
+          <h1>
+            turning ideas into<br />
+            real life products<br />
+            is my <span class="text-gradient">calling</span>
+          </h1>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact</a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <div class="blob"></div>
+          <img src="cc.jpg" alt="Alexander Owen portrait" />
+        </div>
+      </div>
+    </section>
 
-  <!-- HERO -->
-  <table id="home" width="96%" align="center" cellpadding="20" cellspacing="0" bgcolor="#161616">
-    <tr>
-      <!-- Left: headline -->
-      <td width="65%" valign="middle">
-        <font face="Arial, Helvetica, sans-serif" size="7">
-          <b>turning ideas into<br>
-          real life products<br>
-          is my <font color="#b48cf2">c</font><font color="#9ab8ff">a</font><font color="#90e0c5">l</font><font color="#f0c38e">l</font><font color="#b48cf2">i</font><font color="#9ab8ff">n</font><font color="#90e0c5">g</font></b>
-        </font>
-        <br><br>
-        <font face="Arial, Helvetica, sans-serif">
-          <a href="#projects">Projects</a> • 
-          <a href="#contact">Contact</a>
-        </font>
-      </td>
-      <!-- Right: photo -->
-      <td width="35%" align="center" valign="middle">
-        <table cellpadding="12" bgcolor="#0f0f0f">
-          <tr>
-            <td align="center">
-              <img src="cc.jpg" alt="Profile" width="240">
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="container about__wrap">
+        <figure class="about__photo">
+          <img src="cc.jpg" alt="Alexander working on laptop" />
+        </figure>
+        <div class="about__text">
+          <h2>About Me</h2>
+          <p>Hello Stranger! 👋 My name is <strong>Alexander Owen</strong>. I’m an Informatics student at <strong>Universitas Pelita Harapan</strong> (’23) who loves building clean, practical web apps. I blend creativity with technical problem-solving to bring ideas to life.</p>
+          <p>Right now I’m focused on front-end engineering and design systems. I enjoy React, Laravel, and making tiny UX improvements that feel ✨magical✨.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- About -->
-  <br>
-  <table id="about" width="96%" align="center" cellpadding="20" cellspacing="0" bgcolor="#1a1a1a">
-    <tr>
-      <td width="30%" valign="top" align="center">
-        <table cellpadding="6" bgcolor="#0f0f0f">
-          <tr><td><img src="cc.jpg" alt="About photo" width="260"></td></tr>
-        </table>
-      </td>
-      <td width="70%" valign="top">
-        <font face="Arial, Helvetica, sans-serif" size="6"><b>About Me</b></font><br><br>
-        <font face="Arial, Helvetica, sans-serif" size="3">
-          Hello Stranger! 👋 My name is <b>Alexander Owen</b>. I’m an Informatics student at
-          <b>Universitas Pelita Harapan</b> (’23) who loves building clean, practical web apps.
-          I blend creativity with technical problem-solving to bring ideas to life.
-        </font>
-      </td>
-    </tr>
-  </table>
+    <!-- SKILLS -->
+    <section class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="chips">
+          <li class="chip">React</li>
+          <li class="chip">Vue</li>
+          <li class="chip">Laravel</li>
+          <li class="chip">PHP</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">CSS</li>
+          <li class="chip">UI Design</li>
+          <li class="chip">Git</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- Skills -->
-  <br>
-  <table id="skills" width="96%" align="center" cellpadding="16" cellspacing="0" bgcolor="#161616">
-    <tr>
-      <td colspan="3">
-        <font face="Arial, Helvetica, sans-serif" size="6"><b>Skills</b></font>
-      </td>
-    </tr>
-    <!-- “Badges” row 1 -->
-    <tr>
-      <td width="33%" valign="top">
-        <table width="100%" cellpadding="10" bgcolor="#222222">
-          <tr><td><font face="Arial" size="3"><b>. . .</b><br>Front-End Development</font></td></tr>
-        </table>
-      </td>
-      <td width="33%" valign="top">
-        <table width="100%" cellpadding="10" bgcolor="#222222">
-          <tr><td><font face="Arial" size="3"><b>. . . </b><br>Back-End Development</font></td></tr>
-        </table>
-      </td>
-      <td width="33%" valign="top">
-        <table width="100%" cellpadding="10" bgcolor="#222222">
-          <tr><td><font face="Arial" size="3"><b>. . . </b><br>Front-End Development</font></td></tr>
-        </table>
-      </td>
-    </tr>
-    <!-- row 2 -->
-    <tr>
-      <td valign="top">
-        <table width="100%" cellpadding="10" bgcolor="#222222">
-          <tr><td><font face="Arial" size="3"><b>JavaScript</b><br>Web Development</font></td></tr>
-        </table>
-      </td>
-      <td valign="top">
-        <table width="100%" cellpadding="10" bgcolor="#222222">
-          <tr><td><font face="Arial" size="3"><b>PHP</b><br>Back-End Development</font></td></tr>
-        </table>
-      </td>
-      <td valign="top">
-        <table width="100%" cellpadding="10" bgcolor="#222222">
-          <tr><td><font face="Arial" size="3"><b>CSS</b><br>Front-End Basics</font></td></tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+    <!-- PROJECTS -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <!-- Existing project cards -->
+      <article class="card">
+        <div class="card__thumb"></div>
+        <div class="card__body">
+          <h3>Personal Finance Manager</h3>
+          <p>Simple web app to track income &amp; expenses.</p>
+        </div>
+      </article>
 
-  <!-- Projects -->
-  <br>
-  <table id="projects" width="96%" align="center" cellpadding="16" cellspacing="0" bgcolor="#1a1a1a">
-    <tr>
-      <td colspan="2">
-        <font face="Arial, Helvetica, sans-serif" size="6"><b>Projects</b></font>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top" align="center">
-        <table width="95%" cellpadding="12" bgcolor="#222222">
-          <tr><td align="left">
-            <font face="Arial" size="4"><b>Personal Finance Manager</b></font><br>
-            <font face="Arial" size="3">Simple web app to track income & expenses.</font>
-          </td></tr>
-        </table>
-      </td>
-      <td width="50%" valign="top" align="center">
-        <table width="95%" cellpadding="12" bgcolor="#222222">
-          <tr><td align="left">
-            <font face="Arial" size="4"><b>Prim’s Algorithm Demo</b></font><br>
-            <font face="Arial" size="3">Educational visual for MST concept.</font>
-          </td></tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top" align="center">
-        <table width="95%" cellpadding="12" bgcolor="#222222">
-          <tr><td align="left">
-            <font face="Arial" size="4"><b>Portfolio Website</b></font><br>
-            <font face="Arial" size="3">This no-CSS version made with pure HTML.</font>
-          </td></tr>
-        </table>
-      </td>
-      <td width="50%" valign="top" align="center">
-        <table width="95%" cellpadding="12" bgcolor="#222222">
-          <tr><td align="left">
-            <font face="Arial" size="4"><b>More Soon</b></font><br>
-            <font face="Arial" size="3">Adding new builds and case studies.</font>
-          </td></tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+      <article class="card">
+        <div class="card__thumb"></div>
+        <div class="card__body">
+          <h3>Prim’s Algorithm Demo</h3>
+          <p>Interactive visual for the MST concept using canvas.</p>
+        </div>
+      </article>
 
-  <!-- Footer / Contact -->
-  <br>
-  <table id="contact" width="96%" align="center" cellpadding="16" bgcolor="#161616">
-    <tr>
-      <td align="left">
-        <font face="Arial, Helvetica, sans-serif" size="2">
-          © 2025 Alexander Owen. All rights reserved.
-        </font>
-      </td>
-      <td align="right">
-        <font face="Arial, Helvetica, sans-serif" size="2">
-          <a href="mailto:alexowen@example.com">Email</a> &nbsp;·&nbsp;
-          <a href="https://github.com/AlexanderOwen02">GitHub</a> &nbsp;·&nbsp;
-          <a href="#home">Back to top</a>
-        </font>
-      </td>
-    </tr>
-  </table>
+      <article class="card">
+        <div class="card__thumb"></div>
+        <div class="card__body">
+          <h3>Portfolio Website</h3>
+          <p>This responsive version with split HTML/CSS.</p>
+        </div>
+      </article>
 
-  <br>
+      <!-- 🔥 New Flexbox Project card -->
+      <article class="card">
+        <div class="card__thumb"></div>
+        <div class="card__body">
+          <h3>Flexbox Pricing</h3>
+          <p>A responsive pricing table built with Flexbox.</p>
+          <div class="btn-group">
+            <a href="https://alexanderowen02.github.io/Flexbox/" target="_blank" class="btn btn--primary">
+              View Demo
+            </a>
+            <a href="https://github.com/AlexanderOwen02/Flexbox" target="_blank" class="btn btn--ghost">
+              View Code
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer__wrap">
+      <p>© <span id="y"></span> Alexander Owen. All rights reserved.</p>
+      <p>
+        <a href="mailto:alexowen@example.com">Email</a>
+        ·
+        <a href="https://github.com/AlexanderOwen02" target="_blank">GitHub</a>
+        ·
+        <a href="#home">Back to top</a>
+      </p>
+    </div>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
-
-
